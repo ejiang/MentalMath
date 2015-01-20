@@ -1,0 +1,48 @@
+The options that we want to be
+able to set are:
+
+How many trailing
+If there's division
+If there's multiplication
+If there's negatives
+How big do you want decimals to be
+Separate term length, decimal length
+that is, before and after the decimal point
+
+So we make a
+Decider for
+getOp
+
+getOp -> setDigits
+setDigits -> getOp?
+
+57/.4
+
+There are many different problem types
+
+Here are the corresponding IDs and problem types
+
+Decimal: 23.54
+Small decimal: 0.43 (below 1)
+
+Addition/subtraction
+1. decimal + decimal (similar order)
+2. small decimal + small decimal
+3. integer + integer
+4. decimal + small decimal
+
+Multiplication
+5. decimal * integer (similar order)
+6. integer * integer (similar order)
+7. decimal * decimal (similar order)
+8. small decimal * integer (similar order)
+
+Division
+9. integer / (small) decimal (42/3.5)
+10. integer / integer (any order)
+11. (small) decimal / (small) decimal (figurable)
+12. (small) decimal / integer (figurable)
+
+Singles
+13. decimal
+14. integer
