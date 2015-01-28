@@ -8,11 +8,11 @@ public class Question {
 	private Deque<Pair> an;
 	private Node res;
 	private StringBuilder sb;
-  private Sub sub;
+	private Sub sub;
 
 	public Question(int n) {
 		rn = new Random();
-    sub = new Sub();
+		sub = new Sub();
 		// ArrayDeque?
 		an = new LinkedList<Pair>();
 		res = create(n);
@@ -42,11 +42,11 @@ public class Question {
 		// 2) Int - Op - Node
 		// 3) Node - Op - Node
 
-    // TODO
-    // Decimal handle properly
-    // Options pane
+		// TODO
+		// Decimal handle properly
+		// Options pane
 		if (n == 2) {
-      res = sub.makeSub(1, 2, 2);
+			res = sub.makeSub(1, 2, 2);
 		} else if (n == 3) {
 			res.left = new Integer(randint());
 			res.op = getOp();
